@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lee's Kitchen | Good Food, Made Easy in Ilorin</title>
+  <meta name="description" content="Fresh meals, proper portions and easy WhatsApp ordering in Ilorin. Jollof, fried rice, ofada, grilled chicken and more. Get ₦500 off your first order.">
+  <meta name="theme-color" content="#A3191C">
+  <meta property="og:title" content="Lee's Kitchen: Good food, made easy">
+  <meta property="og:description" content="Fresh meals, proper portions and easy ordering in Ilorin. Get ₦500 off your first order.">
+  <meta property="og:image" content="assets/img/banner.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600;700&family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Offer bar -->
+  <div class="offer-bar" id="offerBar">
+    <p>🎉 <strong>₦500 off your first order</strong> <span class="offer-bar__long">· This week's offer</span> ends in <span class="countdown" data-countdown>--</span></p>
+    <button class="offer-bar__cta" data-open-lead="offer-bar">Claim it</button>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a href="#top" class="brand" aria-label="Lee's Kitchen home">
+        <img src="assets/img/logo.jpg" alt="" width="44" height="44">
+        <span>Lee's Kitchen</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#how">How it works</a>
+        <a href="#catering">Catering</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn--primary btn--sm header__cta" data-whatsapp="header" href="#">
+        <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg> Order Now
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow">Good food. Better moments.</p>
+          <h1>Good food,<br><em>made easy.</em></h1>
+          <p class="lead">Fresh meals, proper portions and easy ordering for lunch, dinner, office meals and small events in Ilorin.</p>
+
+          <form class="lead-form lead-form--hero" data-lead-form data-source="hero" novalidate>
+            <p class="lead-form__title">🎁 Get <strong>₦500 off</strong> your first order</p>
+            <div class="lead-form__row">
+              <label class="sr-only" for="hero-email">Email</label>
+              <input id="hero-email" type="email" name="email" placeholder="Your email address" required autocomplete="email">
+              <label class="sr-only" for="hero-phone">WhatsApp number</label>
+              <input id="hero-phone" type="tel" name="phone" placeholder="WhatsApp number (optional)" autocomplete="tel">
+              <button class="btn btn--primary" type="submit">Send my code</button>
+            </div>
+            <p class="lead-form__note">🔒 No spam. Just deals and new menu drops. Unsubscribe anytime.</p>
+            <p class="lead-form__msg" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="hero__actions">
+            <a class="btn btn--ghost" href="#menu">View Menu →</a>
+            <a class="link-wa" data-whatsapp="hero" href="#"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg> Or order on WhatsApp</a>
+          </div>
+
+          <ul class="hero__proof">
+            <li><span class="stars">★★★★★</span> Rated <strong>4.9</strong> by our customers</li>
+            <li>Join <strong data-count-to="250">250</strong>+ food lovers in Ilorin</li>
+          </ul>
+        </div>
+        <div class="hero__media">
+          <img src="assets/img/jollof.jpg" alt="Smoky party jollof rice">
+          <img src="assets/img/grilled-chicken.jpg" alt="Grilled chicken with pepper sauce">
+          <img src="assets/img/plantain-efo.jpg" alt="Fried plantain with efo riro">
+          <img src="assets/img/fried-rice-beef.jpg" alt="Fried rice with beef">
+          <span class="script-tag">Good Food<br>Better Moments</span>
+          <span class="hero__sticker">Made<br>with ♥</span>
+        </div>
+      </div>
+      <ul class="container hero__badges">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-leaf"/></svg> Freshly made</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-bowl"/></svg> Proper portions</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg> Easy ordering</li>
+      </ul>
+    </section>
+
+    <!-- Menu -->
+    <section class="section" id="menu">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow">Our favourites</p>
+            <h2>What are you in the mood for?</h2>
+          </div>
+          <p class="section__sub">Popular meals loved by our customers. Freshly made and full of flavour.</p>
+        </div>
+        <div class="menu-grid" id="menuGrid"><!-- filled by main.js from CONFIG.menu --></div>
+        <p class="menu-note">Prices may change. Your final price is confirmed on WhatsApp.</p>
+      </div>
+    </section>
+
+    <!-- Why -->
+    <section class="section section--tint">
+      <div class="container why">
+        <div>
+          <p class="eyebrow">Why Lee's Kitchen</p>
+          <h2>Good food for real life.</h2>
+        </div>
+        <div class="why__item">
+          <svg class="icon icon--lg" aria-hidden="true"><use href="#i-leaf"/></svg>
+          <h3>Freshly made</h3>
+          <p>Prepared with quality ingredients and served fresh. Never reheated leftovers.</p>
+        </div>
+        <div class="why__item">
+          <svg class="icon icon--lg" aria-hidden="true"><use href="#i-bowl"/></svg>
+          <h3>Proper portions</h3>
+          <p>Meals that feel worth what you paid. You won't need a second lunch.</p>
+        </div>
+        <div class="why__item">
+          <svg class="icon icon--lg" aria-hidden="true"><use href="#i-truck"/></svg>
+          <h3>Easy ordering</h3>
+          <p>Order through WhatsApp in under a minute, with no unnecessary back-and-forth.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mid-page offer -->
+    <section class="section">
+      <div class="container">
+        <div class="offer-card">
+          <div class="offer-card__copy">
+            <p class="eyebrow eyebrow--light">Limited to the first 100 signups</p>
+            <h2>Your first plate is on us… well, ₦500 of it.</h2>
+            <ul class="ticks">
+              <li>₦500 off your first order</li>
+              <li>First to know about new dishes and weekly specials</li>
+              <li>Members-only deals you won't see on Instagram</li>
+            </ul>
+          </div>
+          <form class="lead-form lead-form--card" data-lead-form data-source="mid-page" novalidate>
+            <label class="sr-only" for="mid-name">First name</label>
+            <input id="mid-name" type="text" name="name" placeholder="First name" autocomplete="given-name">
+            <label class="sr-only" for="mid-email">Email</label>
+            <input id="mid-email" type="email" name="email" placeholder="Email address" required autocomplete="email">
+            <label class="sr-only" for="mid-phone">WhatsApp number</label>
+            <input id="mid-phone" type="tel" name="phone" placeholder="WhatsApp number (optional)" autocomplete="tel">
+            <button class="btn btn--light btn--block" type="submit">Yes, send my ₦500 code</button>
+            <p class="lead-form__note">Offer ends in <span class="countdown" data-countdown>--</span></p>
+            <p class="lead-form__msg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__media">
+          <img src="assets/img/efo-riro.jpg" alt="Efo riro with assorted meat" loading="lazy">
+          <img src="assets/img/fried-rice.jpg" alt="Nigerian fried rice" loading="lazy">
+        </div>
+        <div>
+          <p class="eyebrow">About Lee's Kitchen</p>
+          <h2>Food you can actually count on.</h2>
+          <!-- PLACEHOLDER: replace with Lee's real story -->
+          <p>Lee's Kitchen was created for the days you want a proper meal without the stress of cooking. The focus is simple: good taste, generous portions and an ordering experience that feels easy every time.</p>
+          <p>Every pot is cooked the way we'd cook for family, with real stock, fresh peppers and no shortcuts.</p>
+          <a class="btn btn--primary" data-whatsapp="about" href="#"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg> Order today</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section section--tint" id="how">
+      <div class="container">
+        <p class="eyebrow">How it works</p>
+        <h2>Getting your favourite meal is simple.</h2>
+        <ol class="steps">
+          <li><span class="steps__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-bowl"/></svg></span><b>01</b><h3>Choose your meal</h3><p>Pick from the current menu.</p></li>
+          <li><span class="steps__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-wa"/></svg></span><b>02</b><h3>Send your order</h3><p>Order directly through WhatsApp.</p></li>
+          <li><span class="steps__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-leaf"/></svg></span><b>03</b><h3>We prepare it fresh</h3><p>Your meal is cooked and packed properly.</p></li>
+          <li><span class="steps__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-truck"/></svg></span><b>04</b><h3>Pickup or delivery</h3><p>Choose whichever works best for you.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Catering -->
+    <section class="section" id="catering">
+      <div class="container">
+        <div class="catering">
+          <div class="catering__copy">
+            <p class="eyebrow eyebrow--light">Catering &amp; group orders</p>
+            <h2>Feeding more than one person?</h2>
+            <p>Office lunches, birthdays, small gatherings and group orders are covered too. Tell us about your event and we'll send a quote within 24 hours.</p>
+            <ul class="ticks ticks--light">
+              <li>Trays of jollof, fried rice, small chops and proteins</li>
+              <li>Packed neatly and delivered on time</li>
+              <li>Group discounts from 10 plates</li>
+            </ul>
+          </div>
+          <form class="catering-form" data-catering-form novalidate>
+            <h3>Get a free quote</h3>
+            <label>Your name<input type="text" name="name" required autocomplete="name"></label>
+            <label>Email<input type="email" name="email" required autocomplete="email"></label>
+            <label>WhatsApp number<input type="tel" name="phone" required autocomplete="tel"></label>
+            <div class="catering-form__row">
+              <label>Event date<input type="date" name="event_date"></label>
+              <label>No. of guests<input type="number" name="guest_count" min="1" inputmode="numeric" placeholder="e.g. 25"></label>
+            </div>
+            <button class="btn btn--primary btn--block" type="submit">Request my quote</button>
+            <p class="lead-form__msg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section--tint">
+      <div class="container">
+        <p class="eyebrow">What people are saying</p>
+        <h2>Loved in Ilorin.</h2>
+        <!-- PLACEHOLDER testimonials: replace with real customer quotes -->
+        <div class="reviews">
+          <figure class="review">
+            <span class="stars">★★★★★</span>
+            <blockquote>“The food is always fresh, tasty and well packaged. Lee's Kitchen is my go-to anytime I need a proper meal in Ilorin. Highly recommend!”</blockquote>
+            <figcaption><span class="avatar">A</span> Aisha M. · Tanke</figcaption>
+          </figure>
+          <figure class="review">
+            <span class="stars">★★★★★</span>
+            <blockquote>“Ordered for our office lunch, 30 packs, and everything came hot and on time. The jollof finished first!”</blockquote>
+            <figcaption><span class="avatar">T</span> Tunde O. · GRA</figcaption>
+          </figure>
+          <figure class="review">
+            <span class="stars">★★★★★</span>
+            <blockquote>“Portions are no joke. The ofada stew tastes like home. Ordering on WhatsApp took less than a minute.”</blockquote>
+            <figcaption><span class="avatar">C</span> Chioma E. · Fate Road</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+      <div class="container final-cta__inner">
+        <div>
+          <p class="eyebrow eyebrow--light">Still thinking?</p>
+          <h2>Hungry yet?</h2>
+          <p>Lunch, dinner or a random craving: Lee's Kitchen is ready when you are.</p>
+          <div class="final-cta__actions">
+            <a class="btn btn--primary" data-whatsapp="final" href="#"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg> Order on WhatsApp</a>
+            <button class="btn btn--light" data-open-lead="final">Get ₦500 off first</button>
+          </div>
+        </div>
+        <span class="script-tag script-tag--light">Good Food<br>Always</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container footer__grid">
+      <div>
+        <a href="#top" class="brand brand--footer"><img src="assets/img/logo.jpg" alt="" width="44" height="44"><span>Lee's Kitchen</span></a>
+        <p>Good food. Better moments.</p>
+        <form class="lead-form lead-form--footer" data-lead-form data-source="footer" novalidate>
+          <label class="sr-only" for="foot-email">Email</label>
+          <input id="foot-email" type="email" name="email" placeholder="Email for deals" required autocomplete="email">
+          <button class="btn btn--primary btn--sm" type="submit">Join</button>
+          <p class="lead-form__msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <ul><li><a href="#menu">Menu</a></li><li><a href="#about">About</a></li><li><a href="#catering">Catering</a></li><li><a href="#how">How it works</a></li></ul>
+      </div>
+      <div>
+        <h4>Contact us</h4>
+        <!-- PLACEHOLDER contact details: edit CONFIG in assets/js/main.js -->
+        <ul>
+          <li><a data-config-phone href="#">+234 801 234 5678</a></li>
+          <li><a data-config-email href="#">hello@leeskitchen.ng</a></li>
+          <li data-config-address>Ilorin, Kwara State, Nigeria</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow us</h4>
+        <ul class="socials">
+          <li><a data-config-social="instagram" href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a data-config-social="tiktok" href="#" aria-label="TikTok">TikTok</a></li>
+          <li><a data-config-social="facebook" href="#" aria-label="Facebook">Facebook</a></li>
+        </ul>
+        <h4>Opening hours</h4>
+        <ul class="hours" data-config-hours></ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span data-year></span> Lee's Kitchen. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile bar -->
+  <div class="mobile-bar">
+    <a class="btn btn--primary" data-whatsapp="mobile-bar" href="#"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg> Order</a>
+    <button class="btn btn--ghost" data-open-lead="mobile-bar">Get ₦500 off</button>
+  </div>
+
+  <!-- Lead modal (used by exit-intent, "claim" buttons and before-order prompt) -->
+  <div class="modal" id="leadModal" role="dialog" aria-modal="true" aria-labelledby="leadModalTitle" hidden>
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__panel">
+      <button class="modal__close" data-close-modal aria-label="Close">×</button>
+      <img class="modal__img" src="assets/img/grilled-chicken.jpg" alt="" loading="lazy">
+      <div class="modal__body">
+        <p class="eyebrow" id="leadModalEyebrow">Wait! Before you go…</p>
+        <h3 id="leadModalTitle">Take ₦500 off your first order</h3>
+        <p id="leadModalText">Drop your email and we'll send your discount code right away. It takes 5 seconds.</p>
+        <form class="lead-form lead-form--modal" data-lead-form data-source="popup" novalidate>
+          <label class="sr-only" for="modal-name">First name</label>
+          <input id="modal-name" type="text" name="name" placeholder="First name" autocomplete="given-name">
+          <label class="sr-only" for="modal-email">Email</label>
+          <input id="modal-email" type="email" name="email" placeholder="Email address" required autocomplete="email">
+          <label class="sr-only" for="modal-phone">WhatsApp number</label>
+          <input id="modal-phone" type="tel" name="phone" placeholder="WhatsApp number (optional)" autocomplete="tel">
+          <button class="btn btn--primary btn--block" type="submit">Send my ₦500 code</button>
+          <p class="lead-form__msg" role="status" aria-live="polite"></p>
+        </form>
+        <button class="modal__skip" data-skip-modal>No thanks, I'll pay full price</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Icons -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 19c0-8 5-14 15-15-1 10-7 15-15 15Zm0 0 7-7"/></symbol>
+    <symbol id="i-bowl" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 11h18a9 9 0 0 1-18 0Zm5-3c0-1.5 1-2 1-3.5M12 8c0-1.5 1-2 1-3.5M16 8c0-1.5 1-2 1-3.5"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M2 6h12v10H2zM14 10h4l3 3v3h-7M6 19a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm11 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/></symbol>
+  </svg>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
